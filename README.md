@@ -1,12 +1,12 @@
 # image-to-text
 Text detection from images with pytorch
 
-# dependencies
+### dependencies
 `pip3 install torch opencv-python numpy`
 * pytorch might require a specific version if using on a machine with no nvidia gpu, see: https://pytorch.org/get-started/locally/
 
 
-# how to use
+### how to use
 
 * run the program for an image that has been placed under the images folder (example.jpg used here)
 ```
@@ -29,7 +29,7 @@ errors
 python3 train.py
 ```
 
-# how it works
+### how it works
 
 * The program first loads the image, and besides a few tricks thresholds it to get the text to be visible from the background.
 * Lines and individual characters are separated, and fed into a neural network to be classified into letters & digits
