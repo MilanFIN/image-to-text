@@ -35,3 +35,4 @@ python3 train.py
 * Lines and individual characters are separated, and fed into a neural network to be classified into letters & digits
 * The program keeps track of average distances between characters to separate words
 * Two separate neural networks are used. The larger one is used to classify first letter of each word and the smaller one for other letters. The larger one is predicting out of both capital and lowercase letters, and the small one is only predicting out of lowercase ones. This was done as the smaller network has better accuracy and words usually don't have capital letters in the middle.
+* The networks are trained by a batch of generated sample images that can be requested from functions in libs/createimages.py
