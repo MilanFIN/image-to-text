@@ -37,7 +37,7 @@ img = cv2.imread("./images/"+imageName) #big.jpg
 
 #convert to greyscale and threshold
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-th, threshed = cv2.threshold(gray, 10, 255, cv2.THRESH_BINARY_INV|cv2.THRESH_OTSU)
+th, threshed = cv2.threshold(gray, 127, 255, cv2.THRESH_BINARY_INV|cv2.THRESH_OTSU)
 
 
 
